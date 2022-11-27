@@ -1,0 +1,223 @@
+/* Common css Start */
+body{
+    font-family: 'Open Sans', sans-serif;
+ }
+ h1,h2,h3,h4,h5,h6,
+ p,
+ small,
+ ul,
+ ol,
+ button{
+    margin: 0;
+    padding: 0;
+ }
+ a{
+    text-decoration: none;
+ }
+ .section_info h2{
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 800;
+    text-transform: uppercase;
+ }
+ .section_info p{
+    font-size: 16px;
+    color: #7e8287;
+    line-height: 41px;
+ }
+ .section_info p b{
+    font-size: 23px;
+    font-weight: 800;
+ }
+/* // Common css End */
+ 
+ 
+/* Nav Start */
+ #nav{
+    background: #02918c;
+ }
+ #nav ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff;
+    padding: 21px 25px;
+    text-transform: uppercase
+ }
+ #nav ul li:hover a{
+    background: #cfc91d;
+ }
+/* // Nav End */
+ 
+/* Banner Start */
+ #banner{
+    background:url(../pick/banner_pic.jpg);
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    height: 730px;
+    background-size: cover;
+ }
+ #banner::after{
+    inset: 0;
+    opacity: .6;
+    position: absolute;
+    content: '';
+    background: black;
+    z-index: -1;
+ }
+ #banner .banner_content h3{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+ }
+ #banner .banner_content h1{
+    font-size: 68px;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+ }
+ #banner .banner_content p{
+    font-size: 18px;
+    color: #fff;
+ }
+ #banner .banner_content img{
+    display: block;
+    margin: 50px auto;
+ }
+ #banner .banner_content a{
+    font-size: 14px;
+    color: #0b1016;
+    background: #cfc91d;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding:19px 42px;
+    display: inline-block;
+ }
+/* // Banner Css End */
+ 
+/* About Css Start */
+ #about{
+    padding: 85px 0;
+ }
+ #about .about_item_container{
+    margin-top: 80px;
+ }
+ #about .about_item{
+    border-right: 1px solid #7e8287;
+    padding: 50px;
+ }
+ #about .about_item:last-child{
+    border-right: 0;
+ }
+ #about .about_item i{
+    font-size: 40px;
+    color: #02918c;
+ }
+ #about .about_item h3{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 19px 0;
+ }
+ #about .about_item p{
+    font-size: 11px;
+    color: #7e8287;
+ }
+/* // about End */
+
+/* mywork start*/
+#services{
+   background: url(../image/service\ mnd.jpg);
+   background-size: cover;
+   background-position: center;
+}
+#services .section_info{
+   padding: 78px 0;
+}
+#services .service_item h3{
+   font-size: 16px;
+   color: #7e8287;
+   font-weight: 800;
+   margin: 19px 0;
+}
+#services .service_item p{
+   font-size: 11px;
+   color: #7e8287;
+}
+#services .service_item{
+   margin-bottom: 50px;
+   padding-right: 125px;
+}
+/*// services end*/
+
+/*services start*/
+#mywork .section_info{
+   padding: 81px;
+}
+#mywork .mywork_item img {
+   width: 100%;
+}
+#mywork .mywork_item {
+   position: relative;
+}
+#mywork .mywork_item h3{
+   font-size: 16px;
+   color: #fff;
+   font-weight: 800;
+   padding: 15px 0;
+}
+#mywork .mywork_item p{
+   font-size: 13px;
+   color: #fff;
+}
+#mywork .mywork_item .overlay {
+   position: absolute;
+   top: 20px;
+   bottom: 20px;
+   left: 27px;
+   right: 27px;
+   background: rgba(2, 145, 139, 0.85);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   transform: scaleX(0);
+   transition: .4s;
+   padding: 12px;
+}
+#mywork .mywork_item:hover .overlay{
+    transform: scaleX(1);
+}
+/*// mywork section end*/
+
+/*contact start*/
+#contact .section_info{
+   padding: 99px;
+}
+#contact .contact_form{
+   background: #000000;
+}
+#contact .contact_form input,
+#contact .contact_form textarea{
+   background: none;
+   padding: 18px;
+   margin-bottom: 40px;
+   border: none;
+   border-bottom: 1px solid #898989;
+   text-align: center;
+}
+#contact .contact_form input::placeholder,
+#contact .contact_form textarea::placeholder{
+  color: #7e8287;
+  text-transform: uppercase;
+}
+#contact .contact_form input:focus,
+#contact .contact_form textarea:focus{
+  outline:0;
+  border-color: #cfc91d;
+}
+#contact .contact_form textarea{
+  resize: none;
+}
+/*// contact end*/
